@@ -1,0 +1,15 @@
+# First i have to download the libraries that im going to use in this project.
+
+from bs4 import BeautifulSoup
+import pandas as pd
+import requests
+
+''' So i was going to take the data from the imdb website but the imdb server declined my request.
+ I found this website called rottentomatoes and we will work with that.
+'''
+url = ("https://www.rottentomatoes.com/browse/movies_at_home/affiliates:disney-plus,netflix~sort:popular")
+
+page = requests.get(url)
+page
+
+print (page)
